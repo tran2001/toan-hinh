@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
   user-select: none;
 }
@@ -11,7 +10,21 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-image: linear-gradient(
+    to left top,
+    #80546d,
+    #6d4b68,
+    #5a4261,
+    #473a5a,
+    #333251,
+    #293553,
+    #1f3854,
+    #133a53,
+    #17485c,
+    #225663,
+    #316469,
+    #44716e
+  );
   margin: 0;
   overflow: hidden;
 }

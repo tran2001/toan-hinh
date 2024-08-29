@@ -1,11 +1,13 @@
-import React from 'react'
+import { useSelector } from "react-redux";
+import ChooseSquareSlide from "./ChooseSquareSlide";
 
-type Props = {}
+type Props = {};
 
 const Slides = (props: Props) => {
+  const { step } = useSelector((state: any) => state.step);
   return (
-    <div>Slides</div>
-  )
-}
+    <div>{step === 1 ? <ChooseSquareSlide /> : <ChooseSquareSlide />}</div>
+  );
+};
 
-export default Slides
+export default Slides;

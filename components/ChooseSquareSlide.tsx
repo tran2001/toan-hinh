@@ -1,17 +1,5 @@
 import React from "react";
-import {
-  CiCalculator1,
-  CiAlarmOn,
-  CiKeyboard,
-  CiMobile2,
-  CiBasketball,
-  CiClock2,
-  CiWarning,
-  CiPizza,
-  CiPlay1,
-  CiInstagram,
-  CiImageOn,
-} from "react-icons/ci";
+
 
 enum EShapeValue {
   SQUARE = "SQUARE",
@@ -23,46 +11,66 @@ enum EShapeValue {
 const shapes = [
   {
     value: EShapeValue.RECTANGLE,
-    icon: <CiCalculator1 />,
+    icon: <CiCalculator1 size={150} color="white" />,
   },
   {
     value: EShapeValue.RECTANGLE,
-    icon: <CiKeyboard />,
+    icon: <CiKeyboard size={150} color="white" />,
   },
   {
     value: EShapeValue.RECTANGLE,
-    icon: <CiMobile2 />,
+    icon: <CiMobile2 size={150} color="white" />,
   },
   {
     value: EShapeValue.CIRCLE,
-    icon: <CiAlarmOn />,
+    icon: <CiDollar size={150} color="white" />,
   },
   {
     value: EShapeValue.CIRCLE,
-    icon: <CiBasketball />,
+    icon: <CiBasketball size={150} color="white" />,
   },
   {
     value: EShapeValue.CIRCLE,
-    icon: <CiClock2 />,
+    icon: <CiClock2 size={150} color="white" />,
   },
   {
     value: EShapeValue.TRIANGLE,
-    icon: <CiWarning />,
+    icon: <CiWarning size={150} color="white" />,
   },
   {
     value: EShapeValue.TRIANGLE,
-    icon: <CiPizza />,
+    icon: <CiPizza size={150} color="white" />,
   },
   {
     value: EShapeValue.TRIANGLE,
-    icon: <CiPlay1 />,
+    icon: <CiPlay1 size={150} color="white" />,
+  },
+  {
+    value: EShapeValue.SQUARE,
+    icon: <CiInstagram size={150} color="white" />,
+  },
+  {
+    value: EShapeValue.SQUARE,
+    icon: <CiImageOn size={150} color="white" />,
+  },
+  {
+    value: EShapeValue.SQUARE,
+    icon: <CiViewTable size={150} color="white" />,
   },
 ];
 
 type Props = {};
 
 const ChooseSquareSlide = (props: Props) => {
-  return <div></div>;
+  return (
+    <div>
+      <div className="tw-grid tw-grid-cols-4 tw-gap-[50px]">
+        {shapes.map((shape) => (
+          <div key={shape.value}>{shape.icon}</div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default ChooseSquareSlide;
