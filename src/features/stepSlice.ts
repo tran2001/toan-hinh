@@ -16,9 +16,17 @@ export const stepSlice = createSlice({
     setStoreStep: (state, action: PayloadAction<number>) => {
       state.step = action.payload;
     },
+
+    incrementStep: (state) => {
+      state.step += 1;
+    },
+
+    decrementStep: (state) => {
+      state.step -= 1;
+    },
   },
 });
 
-export const { setStoreStep } = stepSlice.actions;
+export const { setStoreStep, incrementStep, decrementStep } = stepSlice.actions;
 
 export default stepSlice.reducer;

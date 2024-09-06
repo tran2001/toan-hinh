@@ -1,25 +1,16 @@
-import React from 'react'
-import {
-  CiCalculator1,
-  CiDollar,
-  CiKeyboard,
-  CiMobile2,
-  CiBasketball,
-  CiClock2,
-  CiWarning,
-  CiPizza,
-  CiPlay1,
-  CiInstagram,
-  CiImageOn,
-  CiViewTable,
-} from "react-icons/ci";
+import { CiPlay1 } from "react-icons/ci";
 
-type Props = {}
+type Props = {
+  size?: number;
+  color?: string;
+};
 
-const Triangle2 = (props: Props) => {
+const Triangle2 = ({ size = 150, color = "#000053" }: Props) => {
   return (
-    <div>Triangle2</div>
-  )
-}
+    <div>
+      <CiPlay1 size={size} color={color} />
+    </div>
+  );
+};
 
-export default Triangle2
+export default Triangle2;

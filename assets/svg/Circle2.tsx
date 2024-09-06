@@ -1,29 +1,14 @@
-import React from "react";
-
-import {
-  CiCalculator1,
-  CiDollar,
-  CiKeyboard,
-  CiMobile2,
-  CiBasketball,
-  CiClock2,
-  CiWarning,
-  CiPizza,
-  CiPlay1,
-  CiInstagram,
-  CiImageOn,
-  CiViewTable,
-} from "react-icons/ci";
+import { CiBasketball } from "react-icons/ci";
 
 type Props = {
-  size: number;
-  color: string;
+  size?: number;
+  color?: string;
 };
 
-const Circle2 = ({ size = 150, color = "white" }: Props) => {
+const Circle2 = ({ size = 150, color = "#000053" }: Props) => {
   return (
     <div>
-      <CiBasketball />
+      <CiBasketball size={size} color={color} />
     </div>
   );
 };

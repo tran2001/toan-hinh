@@ -1,12 +1,11 @@
-import React from "react";
 import { CiClock2 } from "react-icons/ci";
 
 type Props = {
-  size: number;
-  color: string;
+  size?: number;
+  color?: string;
 };
 
-const Circle3 = ({ size = 150, color = "white" }: Props) => {
+const Circle3 = ({ size = 150, color = "#000053" }: Props) => {
   return (
     <div>
       <CiClock2 size={size} color={color} />

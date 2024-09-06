@@ -2,11 +2,11 @@ import React from "react";
 import { CiDollar } from "react-icons/ci";
 
 type Props = {
-  size: number;
-  color: string;
+  size?: number;
+  color?: string;
 };
 
-const Circle1 = ({ size = 150, color = "white" }: Props) => {
+const Circle1 = ({ size = 150, color = "#000053" }: Props) => {
   return (
     <div>
       <CiDollar size={size} color={color} />

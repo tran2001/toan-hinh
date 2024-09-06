@@ -9,7 +9,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        rotate360: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        rotateBox: {
+          "0%": {},
+        },
+      },
+      animation: {
+        rotate360: "rotate360 4s linear infinite",
+      },
+    },
   },
   plugins: [],
   prefix: "tw-",
